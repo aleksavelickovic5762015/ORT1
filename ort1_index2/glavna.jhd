@@ -1,0 +1,3 @@
+MODULE glavna
+	SUBMODULE usporavanje
+		INSTANCE XLXI_21

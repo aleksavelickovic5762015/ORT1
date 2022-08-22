@@ -1,0 +1,396 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+DESKTOP-L7UDFLB::  Tue May 09 15:03:39 2017
+
+par -w -intstyle ise -ol high -t 1 glavna_map.ncd glavna.ncd glavna.pcf 
+
+
+Constraints file: glavna.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "glavna" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                           4 out of 232     1%
+
+   Number of External Input IOBs                  1
+
+      Number of External Input IBUFs              1
+        Number of LOCed External Input IBUFs      1 out of 1     100%
+
+
+   Number of External Output IOBs                 3
+
+      Number of External Output IOBs              3
+        Number of LOCed External Output IOBs      3 out of 3     100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of Slices                         27 out of 4656    1%
+      Number of SLICEMs                      0 out of 2328    0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:17ed461e) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:17ed461e) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:17ed461e) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:1bfdd71e) REAL time: 1 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:1bfdd71e) REAL time: 1 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:1bfdd71e) REAL time: 1 secs 
+
+Phase 7.8  Global Placement
+..
+Phase 7.8  Global Placement (Checksum:b6adeb82) REAL time: 3 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:b6adeb82) REAL time: 3 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:b63126ed) REAL time: 4 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:b63126ed) REAL time: 4 secs 
+
+Total REAL time to Placer completion: 4 secs 
+Total CPU  time to Placer completion: 4 secs 
+Writing design to file glavna.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 62 unrouted;      REAL time: 8 secs 
+
+Phase  2  : 60 unrouted;      REAL time: 9 secs 
+
+Phase  3  : 0 unrouted;      REAL time: 9 secs 
+
+Phase  4  : 2 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+
+Updating file: glavna.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Updating file: glavna.ncd with current fully routed design.
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_25 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_90 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_23 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_95 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_97 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXN_39 may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_27 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_20 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_29 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_73 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_71 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_31 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_75 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_64 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_66 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_69 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_85 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_83 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_93 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_88 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_87 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_76 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_78 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_21/XLXN_81 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 10 secs 
+Total CPU time to Router completion: 10 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGMUX_X2Y11| No   |    1 |  0.000     |  0.146      |
++---------------------+--------------+------+------+------------+-------------+
+|             XLXN_39 |         Local|      |    3 |  0.450     |  1.283      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_25 |         Local|      |    2 |  0.000     |  0.819      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_23 |         Local|      |    2 |  0.000     |  1.302      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_27 |         Local|      |    2 |  0.000     |  1.370      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_20 |         Local|      |    2 |  0.000     |  0.820      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_29 |         Local|      |    2 |  0.000     |  0.586      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_73 |         Local|      |    2 |  0.000     |  1.373      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_71 |         Local|      |    2 |  0.000     |  1.205      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_31 |         Local|      |    2 |  0.000     |  1.055      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_75 |         Local|      |    2 |  0.000     |  0.586      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_64 |         Local|      |    2 |  0.000     |  1.055      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_66 |         Local|      |    2 |  0.000     |  0.586      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_69 |         Local|      |    2 |  0.000     |  0.586      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_85 |         Local|      |    2 |  0.000     |  0.824      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_83 |         Local|      |    2 |  0.000     |  1.053      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_93 |         Local|      |    2 |  0.000     |  1.420      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_88 |         Local|      |    2 |  0.000     |  1.296      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_87 |         Local|      |    2 |  0.000     |  0.821      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_95 |         Local|      |    2 |  0.000     |  1.291      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_76 |         Local|      |    2 |  0.000     |  1.054      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_78 |         Local|      |    2 |  0.000     |  1.055      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_81 |         Local|      |    2 |  0.000     |  0.586      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_97 |         Local|      |    2 |  0.000     |  0.639      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_21/XLXN_90 |         Local|      |    2 |  0.000     |  0.884      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.337ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.936ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.167ns|     N/A|           0
+  N_39                                      | HOLD        |     0.943ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.315ns|     N/A|           0
+  I_21/XLXN_25                              | HOLD        |     0.918ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.358ns|     N/A|           0
+  I_21/XLXN_23                              | HOLD        |     0.952ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.283ns|     N/A|           0
+  I_21/XLXN_27                              | HOLD        |     0.892ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.317ns|     N/A|           0
+  I_21/XLXN_20                              | HOLD        |     0.920ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.358ns|     N/A|           0
+  I_21/XLXN_29                              | HOLD        |     0.952ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.283ns|     N/A|           0
+  I_21/XLXN_73                              | HOLD        |     0.892ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.283ns|     N/A|           0
+  I_21/XLXN_71                              | HOLD        |     0.892ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.283ns|     N/A|           0
+  I_21/XLXN_31                              | HOLD        |     0.892ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.358ns|     N/A|           0
+  I_21/XLXN_75                              | HOLD        |     0.952ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.283ns|     N/A|           0
+  I_21/XLXN_64                              | HOLD        |     0.892ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.358ns|     N/A|           0
+  I_21/XLXN_66                              | HOLD        |     0.952ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.358ns|     N/A|           0
+  I_21/XLXN_69                              | HOLD        |     0.952ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.358ns|     N/A|           0
+  I_21/XLXN_85                              | HOLD        |     0.952ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.353ns|     N/A|           0
+  I_21/XLXN_83                              | HOLD        |     0.949ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.278ns|     N/A|           0
+  I_21/XLXN_93                              | HOLD        |     0.889ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.439ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.283ns|     N/A|           0
+  I_21/XLXN_88                              | HOLD        |     0.892ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.283ns|     N/A|           0
+  I_21/XLXN_87                              | HOLD        |     0.892ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.427ns|     N/A|           0
+  I_21/XLXN_95                              | HOLD        |     1.008ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.283ns|     N/A|           0
+  I_21/XLXN_76                              | HOLD        |     0.892ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.283ns|     N/A|           0
+  I_21/XLXN_78                              | HOLD        |     0.892ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.358ns|     N/A|           0
+  I_21/XLXN_81                              | HOLD        |     0.952ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.358ns|     N/A|           0
+  I_21/XLXN_97                              | HOLD        |     0.952ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     1.438ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.278ns|     N/A|           0
+  I_21/XLXN_90                              | HOLD        |     0.889ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.388ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 11 secs 
+Total CPU time to PAR completion: 11 secs 
+
+Peak Memory Usage:  317 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 24
+Number of info messages: 1
+
+Writing design to file glavna.ncd
+
+
+
+PAR done!

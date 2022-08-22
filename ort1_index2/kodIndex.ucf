@@ -1,0 +1,4 @@
+NET "clk" LOC = "B8" ;
+NET "z1" LOC = "K15" ;
+NET "z2" LOC = "J15" ;
+NET "z3" LOC = "J14" ;

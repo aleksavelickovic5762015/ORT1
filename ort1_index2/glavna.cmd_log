@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "C:/Aleksa/ort1_index2/glavna.xst" -ofn "C:/Aleksa/ort1_index2/glavna.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 glavna.ngc glavna.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o glavna_map.ncd glavna.ngd glavna.pcf 
+par -w -intstyle ise -ol high -t 1 glavna_map.ncd glavna.ncd glavna.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml glavna.twx glavna.ncd -o glavna.twr glavna.pcf 
+bitgen -intstyle ise -f glavna.ut glavna.ncd 
+bitgen -intstyle ise -f glavna.ut glavna.ncd 
+xst -intstyle ise -ifn "C:/Aleksa/ort1_index2/glavna.xst" -ofn "C:/Aleksa/ort1_index2/glavna.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kodIndex.ucf -p xc3s1200e-ft256-5 glavna.ngc glavna.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o glavna_map.ncd glavna.ngd glavna.pcf 
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o glavna_map.ncd glavna.ngd glavna.pcf 
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o glavna_map.ncd glavna.ngd glavna.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kodIndex.ucf -p xc3s1200e-ft256-5 glavna.ngc glavna.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o glavna_map.ncd glavna.ngd glavna.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kodIndex.ucf -p xc3s1200e-ft256-5 glavna.ngc glavna.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o glavna_map.ncd glavna.ngd glavna.pcf 
+par -w -intstyle ise -ol high -t 1 glavna_map.ncd glavna.ncd glavna.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml glavna.twx glavna.ncd -o glavna.twr glavna.pcf -ucf kodIndex.ucf 
+bitgen -intstyle ise -f glavna.ut glavna.ncd 
+bitgen -intstyle ise -f glavna.ut glavna.ncd 
+xst -intstyle ise -ifn "C:/Aleksa/ort1_index2/glavna.xst" -ofn "C:/Aleksa/ort1_index2/glavna.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kodIndex.ucf -p xc3s500e-fg320-5 glavna.ngc glavna.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o glavna_map.ncd glavna.ngd glavna.pcf 
+par -w -intstyle ise -ol high -t 1 glavna_map.ncd glavna.ncd glavna.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml glavna.twx glavna.ncd -o glavna.twr glavna.pcf -ucf kodIndex.ucf 
+bitgen -intstyle ise -f glavna.ut glavna.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kodIndex.ucf -p xc3s500e-fg320-5 glavna.ngc glavna.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o glavna_map.ncd glavna.ngd glavna.pcf 
+par -w -intstyle ise -ol high -t 1 glavna_map.ncd glavna.ncd glavna.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml glavna.twx glavna.ncd -o glavna.twr glavna.pcf -ucf kodIndex.ucf 
+bitgen -intstyle ise -f glavna.ut glavna.ncd 
